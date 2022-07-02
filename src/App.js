@@ -4,7 +4,13 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <Flex bgColor="neutral.cream">
+    <Flex
+      bgColor="neutral.cream"
+      h="100vh"
+      justifyContent="center"
+      alignItems="center"
+      p="10px"
+    >
       <Balance />
     </Flex>
   );

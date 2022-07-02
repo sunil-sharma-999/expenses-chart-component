@@ -3,14 +3,23 @@ import logo from "../../images/logo.svg";
 
 export const Balance = () => {
   return (
-    <Flex>
+    <Flex
+      bg="primary.softRed"
+      rounded="10"
+      px="8"
+      py="6"
+      w="400px"
+      minW="300px"
+      fontFamily="dm sans"
+      color="white"
+      alignContent="center"
+      justifyContent="center"
+    >
       <Stat>
-        <StatLabel>Balance</StatLabel>
-        <StatNumber>£0.00</StatNumber>
+        <StatLabel fontSize="1rem">My Balance</StatLabel>
+        <StatNumber fontWeight="700">$921.48</StatNumber>
       </Stat>
-      <div className="logo-wrap">
-        <img src={logo} alt="" />
-      </div>
+      <img src={logo} alt="logo" className="logo" />
     </Flex>
   );
 };
