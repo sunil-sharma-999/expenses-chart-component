@@ -1,5 +1,11 @@
+import { Flex } from "@chakra-ui/react";
+import { Balance } from "./components/Balance";
 import "./styles.css";
 
 export default function App() {
-  return <div className="App"></div>;
+  return (
+    <Flex className="App">
+      <Balance />
+    </Flex>
+  );
 }
