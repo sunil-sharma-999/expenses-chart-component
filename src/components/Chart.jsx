@@ -1,12 +1,18 @@
 import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
 import data from "../../data.json";
+import { MonthStat } from "./MonthStat";
 
 export const Chart = () => {
   const maxAmount = Math.max(...data.map((item) => item.amount));
 
   return (
     <Box bgColor="white" my="1em" p="1em" rounded="10">
-      <Heading size="lg" letterSpacing="wide" fontWeight="700">
+      <Heading
+        size="lg"
+        letterSpacing="wide"
+        fontWeight="700"
+        color="primary.darkBrown"
+      >
         Spending - Last 7 Days
       </Heading>
       <Flex
@@ -17,8 +23,6 @@ export const Chart = () => {
         alignItems="center"
       >
         {data.map((item) => {
-          console.log(item.amount, maxAmount);
-
           return (
             <Flex
               flexDir="column"
@@ -44,6 +48,7 @@ export const Chart = () => {
         })}
       </Flex>
       <Divider />
+      <MonthStat />
     </Box>
   );
 };

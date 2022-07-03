@@ -11,6 +11,7 @@ export const Balance = () => {
       color="white"
       alignContent="center"
       justifyContent="center"
+      letterSpacing="wide"
     >
       <Stat>
         <StatLabel fontSize="1rem">My Balance</StatLabel>
