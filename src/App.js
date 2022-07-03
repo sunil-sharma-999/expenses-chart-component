@@ -13,9 +13,9 @@ export default function App() {
     >
       <Flex
         p="10px"
-        w={["360px", "400px", "450px"]}
+        w={["360px", "450px", "600px"]}
         flexDir="column"
-        fontFamily="dm sans"
+        fontFamily="DM Sans"
       >
         <Balance />
         <Chart />

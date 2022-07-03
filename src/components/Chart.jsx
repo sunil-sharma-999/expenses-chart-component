@@ -6,9 +6,15 @@ export const Chart = () => {
   const maxAmount = Math.max(...data.map((item) => item.amount));
 
   return (
-    <Box bgColor="white" my="1em" p="1em" rounded="10">
+    <Box
+      bgColor="white"
+      my="1em"
+      px={["1rem", "1rem", "2.5rem"]}
+      py={["1rem", "1rem", "2rem"]}
+      rounded={[12, 12, 15]}
+    >
       <Heading
-        size="lg"
+        size={["lg", "xl"]}
         letterSpacing="wide"
         fontWeight="700"
         color="primary.darkBrown"
@@ -19,7 +25,7 @@ export const Chart = () => {
         py="5"
         gap="1"
         justifyContent="center"
-        h="17rem"
+        h={["17rem", "18rem"]}
         alignItems="center"
       >
         {data.map((item) => {
@@ -37,7 +43,7 @@ export const Chart = () => {
                   maxAmount === item.amount ? "primary.cyan" : "primary.softRed"
                 }
                 h={item.amount * 3.0}
-                w="2.2em"
+                w={["2.2rem", "2.8rem", "3.5rem"]}
                 rounded="5"
               />
               <Text as="span" mt="2" color="neutral.midBrown">
