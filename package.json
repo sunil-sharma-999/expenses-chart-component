@@ -1,8 +1,8 @@
 {
-  "name": "Expanse Chart Component",
+  "name": "expenses-chart-component",
   "version": "1.0.0",
-  "description": "Expanse chart component",
-  "keywords": ["react", "starter"],
+  "description": null,
+  "keywords": ["chakraui", "reactjs", "react18"],
   "homepage": "https://sunil-sharma-999.github.io/expenses-chart-component",
   "main": "src/index.js",
   "dependencies": {
