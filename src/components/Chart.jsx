@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Text, Tooltip } from "@chakra-ui/react";
 import data from "../../data.json";
 import { MonthStat } from "./MonthStat";
 
@@ -38,14 +38,30 @@ export const Chart = () => {
               flex="1"
               key={item.day}
             >
-              <Box
-                bgColor={
-                  maxAmount === item.amount ? "primary.cyan" : "primary.softRed"
-                }
-                h={item.amount * 3.0}
-                w={["2.2rem", "2.8rem", "3.4rem"]}
+              <Tooltip
+                fontFamily="inherit"
+                label={`$${item.amount}`}
+                bgColor="neutral.darkBrown"
+                px="2"
+                py={["2", "2.5"]}
+                fontSize={["0.9rem", "1.2rem"]}
                 rounded="5"
-              />
+                fontWeight="700"
+                color="white"
+                placement="top"
+              >
+                <Box
+                  cursor="pointer"
+                  bgColor={
+                    maxAmount === item.amount
+                      ? "primary.cyan"
+                      : "primary.softRed"
+                  }
+                  h={item.amount * 3.0}
+                  w={["2.2rem", "2.8rem", "3.4rem"]}
+                  rounded="5"
+                />
+              </Tooltip>
               <Text as="span" mt="2" color="neutral.midBrown">
                 {item.day}
               </Text>
