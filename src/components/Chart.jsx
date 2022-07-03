@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 import data from "../../data.json";
 import { MonthStat } from "./MonthStat";
 
@@ -8,24 +8,24 @@ export const Chart = () => {
   return (
     <Box
       bgColor="white"
-      my="1em"
+      my="1.5rem"
       px={["1rem", "1rem", "2.5rem"]}
       py={["1rem", "1rem", "2rem"]}
       rounded={[12, 12, 15]}
     >
-      <Heading
-        size={["lg", "xl"]}
+      <Text
+        fontSize={["1rem", "1.9rem"]}
         letterSpacing="wide"
         fontWeight="700"
         color="primary.darkBrown"
       >
         Spending - Last 7 Days
-      </Heading>
+      </Text>
       <Flex
         py="5"
         gap="1"
         justifyContent="center"
-        h={["17rem", "18rem"]}
+        h="17rem"
         alignItems="center"
       >
         {data.map((item) => {
@@ -43,7 +43,7 @@ export const Chart = () => {
                   maxAmount === item.amount ? "primary.cyan" : "primary.softRed"
                 }
                 h={item.amount * 3.0}
-                w={["2.2rem", "2.8rem", "3.5rem"]}
+                w={["2.2rem", "2.8rem", "3.4rem"]}
                 rounded="5"
               />
               <Text as="span" mt="2" color="neutral.midBrown">

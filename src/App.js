@@ -13,7 +13,7 @@ export default function App() {
     >
       <Flex
         p="10px"
-        w={["360px", "450px", "600px"]}
+        w={["360px", "450px", "580px"]}
         flexDir="column"
         fontFamily="DM Sans"
       >
