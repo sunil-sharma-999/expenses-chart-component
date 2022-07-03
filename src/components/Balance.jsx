@@ -1,5 +1,5 @@
 import { Flex, Image, Stat, StatLabel, StatNumber } from "@chakra-ui/react";
-import logo from "../../images/logo.svg";
+import logo from "../images/logo.svg";
 
 export const Balance = () => {
   return (

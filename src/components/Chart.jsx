@@ -1,5 +1,5 @@
 import { Box, Divider, Flex, Text, Tooltip } from "@chakra-ui/react";
-import data from "../../data.json";
+import data from "../data.json";
 import { MonthStat } from "./MonthStat";
 
 export const Chart = () => {
