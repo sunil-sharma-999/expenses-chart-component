@@ -1,11 +1,9 @@
 {
-  "name": "react",
+  "name": "Expanse Chart Component",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "Expanse chart component",
+  "keywords": ["react", "starter"],
+  "homepage": "https://sunil-sharma-999.github.io/expenses-chart-component",
   "main": "src/index.js",
   "dependencies": {
     "@chakra-ui/react": "2.2.1",
@@ -26,10 +24,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
