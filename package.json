@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": null,
   "keywords": ["chakraui", "reactjs", "react18"],
-  "homepage": "https://sunil-sharma-999.github.io/expenses-chart-component",
   "main": "src/index.js",
   "dependencies": {
     "@chakra-ui/react": "2.2.1",
