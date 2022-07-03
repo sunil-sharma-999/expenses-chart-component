@@ -8,7 +8,7 @@ export const Chart = () => {
   return (
     <Box
       bgColor="white"
-      my="1.5rem"
+      my={["1rem", "1.2rem", "1.5rem"]}
       px={["1rem", "1rem", "2.5rem"]}
       py={["1rem", "1rem", "2rem"]}
       rounded={[12, 12, 15]}

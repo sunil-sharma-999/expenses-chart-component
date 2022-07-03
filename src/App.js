@@ -1,18 +1,14 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Grid } from "@chakra-ui/react";
 import { Balance } from "./components/Balance";
 import { Chart } from "./components/Chart";
 import "./styles.css";
 
 export default function App() {
   return (
-    <Flex
-      bgColor="neutral.cream"
-      h="100vh"
-      justifyContent="center"
-      alignItems="center"
-    >
+    <Grid h="100vh" justifyContent="center" alignItems="center">
       <Flex
-        p="10px"
+        px="10px"
+        py="3rem"
         w={["360px", "450px", "560px"]}
         flexDir="column"
         fontFamily="DM Sans"
@@ -20,6 +16,6 @@ export default function App() {
         <Balance />
         <Chart />
       </Flex>
-    </Flex>
+    </Grid>
   );
 }
